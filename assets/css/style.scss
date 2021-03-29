@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+$borderColor:#313131;
+$linkBorder:#FF6046;
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url('../img/dota/bg_repeater.jpg');
+    font-family: 'Noto Sans', sans-serif;
+}
+header{
+    #brand{
+        width: 200px;
+        height: 50px;
+        background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #navigacija{
+        padding:1vw;
+        min-height:550px;
+        background-image: url('../img/dota/dotamap.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        mask-image: linear-gradient(to top, transparent 25%, black 100%);
+    
+    }
+    #navigation{
+        
+        
+        h1,a{
+            color:white;
+            font-size: 1.5vw;
+            margin:0px 1vw;
+            font-weight: 600;
+        }
+        .active{
+            border-bottom:2px solid $linkBorder;
+        }
+    }
+    #relativeNav{
+        position:absolute;
+        top:25vw;
+        left:40vw;
+        h1{
+            color:white;
+            font-weight: 700;
+        }
+    }
+}
+
+/*SECTION BASICS*/
+section .row{
+    padding: 1vw;
+    color:white;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+}
+#image1{
+    background-image:url('../img/dota/voidspirit.png');
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+.text{
+    h3,h4{
+        text-align: center;
+    }
+}
+
+
+footer{
+    padding:1vw;
+    background-color:black;
+    color:#777777;
+}

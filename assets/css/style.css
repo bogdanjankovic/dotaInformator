@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+body {
+  background-image: url("../img/dota/bg_repeater.jpg");
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header #brand {
+  width: 200px;
+  height: 50px;
+  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header #navigacija {
+  padding: 1vw;
+  min-height: 550px;
+  background-image: url("../img/dota/dotamap.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), to(black));
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+          mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), to(black));
+          mask-image: linear-gradient(to top, transparent 25%, black 100%);
+}
+
+header #navigation h1, header #navigation a {
+  color: white;
+  font-size: 1.5vw;
+  margin: 0px 1vw;
+  font-weight: 600;
+}
+
+header #navigation .active {
+  border-bottom: 2px solid #FF6046;
+}
+
+header #relativeNav {
+  position: absolute;
+  top: 25vw;
+  left: 40vw;
+}
+
+header #relativeNav h1 {
+  color: white;
+  font-weight: 700;
+}
+
+/*SECTION BASICS*/
+section .row {
+  padding: 1vw;
+  color: white;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+}
+
+#image1 {
+  background-image: url("../img/dota/voidspirit.png");
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+
+.text h3, .text h4 {
+  text-align: center;
+}
+
+footer {
+  padding: 1vw;
+  background-color: black;
+  color: #777777;
+}
+/*# sourceMappingURL=style.css.map */
