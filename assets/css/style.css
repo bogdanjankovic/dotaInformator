@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-image: url("../img/dota/bg_repeater.jpg");
   font-family: 'Noto Sans', sans-serif;
+  background-size: 100%;
 }
 
 header #brand {
@@ -15,9 +21,8 @@ header #brand {
 
 header #navigacija {
   padding: 1vw;
-  min-height: 550px;
+  min-height: 600px;
   background-image: url("../img/dota/dotamap.png");
-  background-size: contain;
   background-repeat: no-repeat;
   -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), to(black));
   -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);

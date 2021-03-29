@@ -8,6 +8,7 @@ $linkBorder:#FF6046;
 body{
     background-image: url('../img/dota/bg_repeater.jpg');
     font-family: 'Noto Sans', sans-serif;
+    background-size: 100%;
 }
 header{
     #brand{
@@ -20,9 +21,9 @@ header{
     }
     #navigacija{
         padding:1vw;
-        min-height:550px;
+        min-height:600px;
         background-image: url('../img/dota/dotamap.png');
-        background-size: contain;
+        
         background-repeat: no-repeat;
         mask-image: linear-gradient(to top, transparent 25%, black 100%);
     
