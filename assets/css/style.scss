@@ -56,14 +56,15 @@ header{
 section .row{
     padding: 1vw;
     color:white;
-    font-size: 22px;
+    font-size: 1.5em;
     line-height: 150%;
     letter-spacing: 0.5px;
 }
 #image1{
     background-image:url('../img/dota/voidspirit.png');
     background-repeat: no-repeat;
-    min-height: 400px;
+    background-position:center center;
+    min-height: 500px;
 }
 .text{
     h3,h4{
