@@ -24,45 +24,49 @@
        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
          <ul class="navbar-nav ">
            <li class="nav-item">
-             <a class="nav-link" aria-current="page" href="#"><span class="active">ABOUT</span></a>
+             <a class="nav-link" aria-current="page" href="#"><span class="active">MECHANICS</span></a>
            </li>
            <li class="nav-item">
              <a class="nav-link " aria-current="page" href="#">HEROES</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="#">MECHANICS</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link disabled" href="#">AUTHOR</a>
+             <a class="nav-link" href="#">AUTHOR</a>
            </li>
          </ul>
        </div>
      </div>
    </nav>
  </div>
- <div id="relativeNav"><h1>Introduction</h1></div>
+ <div id="relativeNav">
+   
+	 <h1> <span id="minor">JOIN THE</span> <br/> <span id="major">DEFENSE OF THE ANCIENTS</span></h1>
+	 <div class="horizontalLine mx-auto"></div>
+ </div>
  </header>
  <!--BASICS-->
- <section>
+ <section class="container">
      <!--PRIVREMENO-->
-     <nav id="navbar-example3" class="navbar navbar-light col-md-6">
-       <a class="navbar-brand" href="#">The Basics</a>
-       <nav class="nav nav-pills flex-column">
-         <a class="nav-link" href="#item-1">Heroes</a>
-         <a class="nav-link" href="#item-2">Items</a>
-         <a class="nav-link" href="#item-3">Lanes, Creeps & Towers</a>
+     <nav id="navbar-example3" class="navbar navbar-light col-md-12 ">
+       
+       <nav class="nav p-4 mx-auto mb-4 d-flex justify-content-around">
+         <a class="nav-link border-end ml-4" href="#item-1">Heroes</a>
+         <a class="nav-link border-end ml-4" href="#item-2">Items</a>
+         <a class="nav-link ml-4" href="#item-3">Lanes, Creeps & Towers</a>
        </nav>
      </nav>
-     
      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0">
        <div class="row">
-         <div id="image1" class="col-md-5"></div>
-       <div class="text col-md-6">
-           <h3>The Basics</h3>
-         <h4 id="item-1">Heroes</h4>
+		   <div class="col-md-12 p-4">
+			   <h4 id="item-1" class="text-center text-danger">Heroes</h4>
+          	<p class="p-4">Players choose a Hero at the start of every match. There are 120 Heroes in Dota 2, each with their own unique set of Abillities and playstyle.</p>
+          </div> 
+         <div id="image1" class="image col-md-5"></div>
+		    
+       <div class="text p-4 col-md-6">
+         
          <p>
            
-           Players choose a Hero at the start of every match. There are 120 Heroes in Dota 2, each with their own unique set of Abillities and playstyle.
+         
            <br/>
            <br/>
            There are three basic categories of Heroes: Strength, Agility, and Intelligence.
@@ -71,48 +75,62 @@
            Heroes are further broken down into Ranged and Melee, which are defined by the range of their attacks. Melee Heroes must be close to their targets, while Ranged Heroes can attack from afar.
          <br/>
          <br/>
-         Heroes have three basic Abilities and one powerful Ultimate Ability that is unlocked at Level 6.
          </p>
          </div>
+		   <div>
+         	<p class="p-4">Heroes have three basic Abilities and one powerful Ultimate Ability that is unlocked at Level 6.</p>
+         </div> 
+		   <div class="horizontalLine mx-auto"></div>
        </div>
        <div class="row">
-         <div id="image2" class="col-md-7"></div>
-       <div class="text col-md-4">
-         <h3>The Basics</h3>
-       <h4 id="item-2">Items</h4>
+        <h4 id="item-2" class="text-center text-danger">Items</h4> 
+		   <p class="p-4">Heroes can equip Items that augment and improve their attributes and Abilities. In this way, Items can change how a Hero is played.</p> 
+       <div class="text p-4 col-sm-12  col-lg-4">
+         
+       
        <p>
          
-         Players choose a Hero at the start of every match. There are 120 Heroes in Dota 2, each with their own unique set of Abillities and playstyle.
+        
          <br/>
-         There are three basic categories of Heroes: Strength, Agility, and Intelligence.
+		  <br/>
+         Items can be purchased with Gold from the Shopkeeper located in each team's Fountain.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br/>
+         <br/>
+         Some Items can be consumed to replenish a Hero's Health and Mana.
          <br/>
          <br/>
-         Heroes are further broken down into Ranged and Melee, which are defined by the range of their attacks. Melee Heroes must be close to their targets, while Ranged Heroes can attack from afar.
-         <br/>
-         <br/>
-         Heroes have three basic Abilities and one powerful Ultimate Ability that is unlocked at Level 6.
+         Many powerful Items may only be purchased at two Secret Shops, which are located deeper within the Map.
+		   <br/>
+		   <br/>
+		   
        </p>
+		   
+		   
        </div>
+		   
+		  <div id="image2" class="image col-sm-12 col-md-10 col-lg-7"></div>
+		   <p class="col-12"> Items you purchase can often be used as components in Recipes, which can then be combined into powerful upgraded Items. Upgraded Items can also be sold back to the Shopkeeper for half of their original purchase price. </p>
+		   <div class="horizontalLine mx-auto"></div>
        </div>
        <div class="row">
-         <div id="image3" class="col-md-7"></div>
-       <div class="text col-md-4">
-         <h3>The Basics</h3>
-       <h4 id="item-3">Lanes, Creeps & Towers</h4>
-       <p>
+         <div id="image3" class="image col-md-5"></div>
+       	<div class="p-4 ">
+			<h4 id="item-3" class="text-center text-danger">Lanes, Creeps & Towers</h4>
+       <p class="col-md-12 p-4">Each team's Base has three sets of Barracks that spawn waves of Units called Creeps that march across the Map to the other team's Base. The path these Creeps take are called Lanes.</p>
+		   </div>
+		   <div class="text p-2 col-md-7">
          
-         Players choose a Hero at the start of every match. There are 120 Heroes in Dota 2, each with their own unique set of Abillities and playstyle.
-         <br/>
-         There are three basic categories of Heroes: Strength, Agility, and Intelligence.
-         <br/>
-         <br/>
-         Heroes are further broken down into Ranged and Melee, which are defined by the range of their attacks. Melee Heroes must be close to their targets, while Ranged Heroes can attack from afar.
-         <br/>
-         <br/>
-         Heroes have three basic Abilities and one powerful Ultimate Ability that is unlocked at Level 6.
-       </p>
+       <br>
+         <br>
+         Heroes earn Experience by killing Creeps, and Gold when they land the killing blow on Creeps. <br>
+  <br>
+        <p class="col-md-12"> Spaced at intervals in each Lane there are three powerful Towers that will automatically attack enemy Heroes and Creeps that get near them.</p> </p>
+       <p>&nbsp;</p>
+       
        </div>
+		   <div id="finalText"><p class="p-4">&nbsp;In addition to Creeps that march down the Lanes, there are Neutral Creep Camps, at various locations on the Map, which can also be killed for Gold, Experience, and Special Items.</p></div>
+<div id="finalLine"class="horizontalLine mx-auto"></div>
        </div>
+		 
    </div>
  </section>
  <article class="col-md-6">
@@ -138,6 +156,7 @@
      </button>
    </div>
  </article>
+	<section id="joinUs"></section>
  <footer>
    <i class="fab fa-github"></i>   <i class="fab fa-linkedin-in"></i>   <i class="fas fa-inbox"></i> bogdan.jankovic.83.19&#64;ict.edu.rs
  </footer >
