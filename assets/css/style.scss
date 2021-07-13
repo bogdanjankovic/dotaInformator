@@ -6,9 +6,52 @@ $linkBorder:#FF6046;
     margin:0px;
     padding:0px;
 }
-body{
-    background-image: url('../img/dota/bg_repeater.jpg');
+.orange{color:$linkBorder;}
+.homepage_StandardButton {
+    border: 3px solid #ffffff50;
+    padding: 15px 25px;
+    margin: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+   
+}
+.homepage_ButtonText {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;  
+    :hover{
+        border: 3px solid $linkBorder;
+    }
+}
+
+#mechanics,#heroes,#author{
+    
     font-family: 'Noto Sans', sans-serif;
+    background-size: 100%;
+}
+#mechanics{
+    background-color:#000;
+    background-image: url('../img/dota/bg_repeater.jpg');
+}
+#heroes{
+    background-color:#000;
+}
+#author{
+    background-image:url('../img/dota/nemestice\ background.jpg');
+    background-repeat: no-repeat;
+}
+#heroSection{
+    background-image: url('../img/dota/heroes.jpg');
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 header{
@@ -18,20 +61,26 @@ header{
         background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: center center;
-    }
-    #navigacija{
-        padding:1vw;
-        min-height:600px;
-        background-image: url('../img/dota/dotamap.png');
         
+    }
+    #navigacija,#heroesNav{
+        padding:1vw;
         background-repeat: no-repeat;
         mask-image: linear-gradient(to top, transparent 25%, black 100%);
 		-webkit-mask-image:linear-gradient(to top, transparent 25%, black 100%);
     
     }
+    
+   
+    #navigacija{
+        min-height:600px; 
+        background-image: url('../img/dota/dotamap.png');
+        background-position: center center; 
+    } 
+
     #navigation{
         position:relative;
+        color:$linkBorder;
         
         h1,a{
             color:white;
@@ -41,11 +90,11 @@ header{
         }
         .active{
             border-bottom:2px solid $linkBorder;
-        }
+        } 
     }
     #relativeNav{
 		text-align: center;
-		letter-spacing: 1vw;
+		letter-spacing: 1vw;   
         position:absolute;
         top:30%;
         left:30%;
@@ -57,7 +106,19 @@ header{
 			}
         }
     }
-}      
+    #relativeNavHero{
+		text-align: center;
+		letter-spacing: 1vw;
+        position:absolute; 
+         h1{
+            color:white;
+            font-weight: 700;
+			#minor{
+				color:#E2DACE90;
+			}
+        }
+    }
+}       
 .horizontalLine{
 	width: 80px;
     height: 3px;
@@ -105,15 +166,91 @@ section .row{
     h3,h4{
         text-align: center;
 		color:white;
-    }
+    }  
 }
-
-
+   
+.join{
+    font-size: 50px;
+    color:#E2DACE90;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#heroSection{
+    color:white;
+    text-align: center;
+    p{
+        width:70%;
+    } 
+}
+.us{
+    font-size: 100px;
+    line-height: 105%;
+    color:#e2dace;
+}
+/*MODAL*/
+.abilityMain{
+    width:100%;
+    padding:8px;
+    background-color: #121212;
+    display:flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+    opacity: 0.8;
+}  
+.links{
+    background-color: #121212;
+}
+.abilityInfo{
+    flex-grow: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-right: 12px;  
+}
+.abilityName{
+    color: #fff; 
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.abilityDesc{
+    color: #ddd;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+.abilityDesc span{
+    color: #A3DCEE;
+}
+ 
+#preFooter{  
+    margin-top:4vw;
+    background-image:url('../img/dota/gameboard_heroes.png');
+     
+}
+/*FOOTER*/
 footer{
     padding:1vw;
     background-color:black;
-    color:#777777;
+    nav li{
+        margin:4px;
+    }
+    a{
+        color:#777777;
+    }
+    a:hover,p{
+        color:$linkBorder;
+    }
+   
+}
+#author i{
+    font-size: 3.5vw;
+    color:$linkBorder; 
 }
 
-@import 'responsive';                   
+@import 'responsive';                        
 

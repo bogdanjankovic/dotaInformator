@@ -1,12 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
-body {
-  background-image: url("../img/dota/bg_repeater.jpg");
+.orange {
+  color: #FF6046;
+}
+
+.homepage_StandardButton {
+  border: 3px solid #ffffff50;
+  padding: 15px 25px;
+  margin: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.homepage_ButtonText {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homepage_ButtonText :hover {
+  border: 3px solid #FF6046;
+}
+
+#mechanics, #heroes, #author {
   font-family: 'Noto Sans', sans-serif;
-  background-size: 100%; }
+  background-size: 100%;
+}
+
+#mechanics {
+  background-color: #000;
+  background-image: url("../img/dota/bg_repeater.jpg");
+}
+
+#heroes {
+  background-color: #000;
+}
+
+#author {
+  background-image: url("../img/dota/nemestice background.jpg");
+  background-repeat: no-repeat;
+}
+
+#heroSection {
+  background-image: url("../img/dota/heroes.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 
 header #brand {
   width: 200px;
@@ -14,127 +78,404 @@ header #brand {
   background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center; }
-header #navigacija {
+}
+
+header #navigacija, header #heroesNav {
   padding: 1vw;
+  background-repeat: no-repeat;
+  mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), to(black));
+  mask-image: linear-gradient(to top, transparent 25%, black 100%);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(25%, transparent), to(black));
+  -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%);
+}
+
+header #navigacija {
   min-height: 600px;
   background-image: url("../img/dota/dotamap.png");
-  background-repeat: no-repeat;
-  mask-image: linear-gradient(to top, transparent 25%, black 100%);
-  -webkit-mask-image: linear-gradient(to top, transparent 25%, black 100%); }
+  background-position: center center;
+}
+
 header #navigation {
-  position: relative; }
-  header #navigation h1, header #navigation a {
-    color: white;
-    font-size: 1.5vw;
-    margin: 0px 1vw;
-    font-weight: 600; }
-  header #navigation .active {
-    border-bottom: 2px solid #FF6046; }
+  position: relative;
+  color: #FF6046;
+}
+
+header #navigation h1, header #navigation a {
+  color: white;
+  font-size: 1.5vw;
+  margin: 0px 1vw;
+  font-weight: 600;
+}
+
+header #navigation .active {
+  border-bottom: 2px solid #FF6046;
+}
+
 header #relativeNav {
   text-align: center;
   letter-spacing: 1vw;
   position: absolute;
   top: 30%;
-  left: 30%; }
-  header #relativeNav h1 {
-    color: white;
-    font-weight: 700; }
-    header #relativeNav h1 #minor {
-      color: #E2DACE90; }
+  left: 30%;
+}
+
+header #relativeNav h1 {
+  color: white;
+  font-weight: 700;
+}
+
+header #relativeNav h1 #minor {
+  color: #E2DACE90;
+}
+
+header #relativeNavHero {
+  text-align: center;
+  letter-spacing: 1vw;
+  position: absolute;
+}
+
+header #relativeNavHero h1 {
+  color: white;
+  font-weight: 700;
+}
+
+header #relativeNavHero h1 #minor {
+  color: #E2DACE90;
+}
 
 .horizontalLine {
   width: 80px;
   height: 3px;
   min-height: 3px;
   background-color: #FF6046;
-  border-radius: 1px; }
+  border-radius: 1px;
+}
 
 /*SECTION BASICS*/
 section nav a {
   font-weight: 700;
   color: #FF6046;
   letter-spacing: 0.5px;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 section nav a:hover {
-  color: #313131; }
+  color: #313131;
+}
 
 section .row {
   padding: 1vw;
   color: white;
   font-size: 1.5em;
   line-height: 150%;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+}
 
 .image {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  min-height: 300px; }
+  min-height: 300px;
+}
 
 #image1 {
-  background-image: url("../img/dota/voidspirit.png"); }
+  background-image: url("../img/dota/voidspirit.png");
+}
 
 #image2 {
-  background-image: url("../img/dota/items.png"); }
+  background-image: url("../img/dota/items.png");
+}
 
 #image3 {
   background-image: url("../img/dota/neutralItems.png");
-  background-size: contain; }
+  background-size: contain;
+}
 
 .text h3, .text h4 {
   text-align: center;
-  color: white; }
+  color: white;
+}
 
+.join {
+  font-size: 50px;
+  color: #E2DACE90;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#heroSection {
+  color: white;
+  text-align: center;
+}
+
+#heroSection p {
+  width: 70%;
+}
+
+.us {
+  font-size: 100px;
+  line-height: 105%;
+  color: #e2dace;
+}
+
+/*MODAL*/
+.abilityMain {
+  width: 100%;
+  padding: 8px;
+  background-color: #121212;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  opacity: 0.8;
+}
+
+.links {
+  background-color: #121212;
+}
+
+.abilityInfo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5px;
+  margin-left: 8px;
+  margin-right: 12px;
+}
+
+.abilityName {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.abilityDesc {
+  color: #ddd;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.abilityDesc span {
+  color: #A3DCEE;
+}
+
+#preFooter {
+  margin-top: 4vw;
+  background-image: url("../img/dota/gameboard_heroes.png");
+}
+
+/*FOOTER*/
 footer {
   padding: 1vw;
   background-color: black;
-  color: #777777; }
+}
+
+footer nav li {
+  margin: 4px;
+}
+
+footer a {
+  color: #777777;
+}
+
+footer a:hover, footer p {
+  color: #FF6046;
+}
+
+#author i {
+  font-size: 3.5vw;
+  color: #FF6046;
+}
 
 /* CSS Document */
 @media only screen and (min-width: 320px) {
   header #navigation h1, header #navigation a {
-    font-size: 2.5vw; }
-
+    font-size: 2.5vw;
+  }
   section nav a {
     font-size: 1em;
     padding: 2px !important;
-    letter-spacing: 1px; }
-
+    letter-spacing: 1px;
+  }
   #navigacija {
-    background-position: center center; }
-
+    background-position: center center;
+  }
+  #joinUs {
+    display: none;
+  }
   header #relativeNav {
     top: 40%;
-    left: 7%; }
-
+    left: 7%;
+  }
+  #heroesNav {
+    background-size: cover;
+    background-image: url("../img/dota/heroes_full.jpg");
+    background-position: center top;
+    min-height: 300px;
+    background-attachment: scroll;
+  }
+  #relativeNavHero {
+    top: 25%;
+    left: 13%;
+  }
   .row #image3 {
-    order: 2; }
-
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   .row #item-3 {
-    order: 1; }
-
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   #finalText {
-    order: 3; }
-
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
   #finalLine {
-    order: 4; } }
-@media only screen and (min-width: 660px) {
-  section nav a {
-    font-size: 1.5em; }
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .abilityMain img {
+    margin: 0px auto;
+  }
+  .abilityDesc {
+    text-align: center;
+  }
+  #preFooter {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 200px;
+  }
+  #author img {
+    width: 60%;
+  }
+}
 
+@media only screen and (min-width: 660px) {
+  header #navigation h1, header #navigation a {
+    font-size: 1.5vw;
+  }
+  section nav a {
+    font-size: 1.5em;
+  }
   header #relativeNav {
     top: 40%;
-    left: 15%; } }
+    left: 15%;
+  }
+  header #relativeNavHero {
+    top: 24%;
+    left: 28%;
+  }
+  #heroesNav {
+    min-height: 400px;
+  }
+  #preFooter {
+    background-position: top center;
+    min-height: 500px;
+  }
+}
+
 @media only screen and (min-width: 780px) {
   section nav a {
     font-weight: 700;
     color: #FF6046;
     letter-spacing: 0.5px;
     font-size: 2em;
-    padding: 0.5rem 1rem !important; } }
+    padding: 0.5rem 1rem !important;
+  }
+  .modal-xl {
+    width: 90%;
+    max-width: 1200px;
+  }
+  header #relativeNavHero {
+    top: 20%;
+    left: 30%;
+  }
+  #preFooter {
+    background-position: top left;
+    min-height: 600px;
+  }
+}
+
 @media only screen and (min-width: 1100px) {
   header #relativeNav {
     top: 40%;
-    left: 30%; } }
+    left: 30%;
+  }
+  #joinUs {
+    margin: 60px 0;
+    padding: 10%;
+    background-image: url("../img/dota/background4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 548px;
+  }
+  header #relativeNavHero {
+    top: 80%;
+    left: 40%;
+  }
+  #heroesNav {
+    background-size: no-repeat;
+    background-image: url("../img/dota/heroes_full.jpg");
+    background-position: center top;
+    min-height: 900px;
+  }
+  .abilityMain img {
+    margin: 0px;
+  }
+  .abilityDesc {
+    text-align: left;
+  }
+  .modal-body {
+    background-size: 130%;
+    background-repeat: no-repeat;
+  }
+  #Modal1 .modal-body {
+    background-image: url("../img/dota/icons/abaddon_portrait.png");
+  }
+  #Modal2 .modal-body {
+    background-image: url("../img/dota/icons/aa_portrait.png");
+  }
+  #Modal3 .modal-body {
+    background-image: url("../img/dota/icons/arcwarden_portrait.png");
+  }
+  #Modal4 .modal-body {
+    background-image: url("../img/dota/icons/pudge_portrait.png");
+  }
+  #Modal5 .modal-body {
+    background-image: url("../img/dota/icons/lina_portrait.png");
+  }
+  #Modal6 .modal-body {
+    background-image: url("../img/dota/icons/nevermore_portrait.png");
+  }
+  #preFooter {
+    background-position: top;
+    min-height: 800px;
+  }
+  #navigacija1 {
+    min-height: 300px;
+  }
+  #author img {
+    width: 30%;
+  }
+  #author .abilityMain {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
